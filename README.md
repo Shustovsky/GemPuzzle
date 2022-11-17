@@ -1,2 +1,1 @@
-# shustovsky-JSFE2022Q3
-Private repository for @shustovsky
+# https://shustovsky.github.io/GemPuzzle/RSSGemPuzzle/
