@@ -1,0 +1,76 @@
+.header {
+    background: #000000;
+    backdrop-filter: blur(2px);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    &_wrapper {
+        height: 80px;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    &__logo {
+        width: 82px;
+        height: 52px;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        &_text {
+            margin: 3.55px 4.75px;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 120%;
+            text-align: center;
+        }
+        &_bamboo {
+            position: absolute;
+            left: 11px;
+            bottom: 20px;
+        }
+    }
+    .designed {
+        text-align: right;
+        line-height: 140%;
+    }
+    .burger,
+    .burger_menu {
+        display: none;
+    }
+    nav {
+        ul {
+            li:nth-child(4) {
+                a {
+                    font-weight: 500;
+                    pointer-events: none;
+                    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 3.64vw;
+        line-height: 140%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    &:hover {
+        transition: all 1s;
+        background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+}

@@ -1,0 +1,134 @@
+@media(max-width: 1599px) {
+    .footer {
+        &_container {
+            grid-template-columns: 32.5% 25.5% 43.4%;
+            grid-template-rows: 39.4% 26% 50%;
+        }
+        .btn {
+            margin-left: 5%;
+        }
+        &__logo {
+            margin-left: 5%;
+        }
+        &__social {
+            margin-left: 5%;
+        }
+        nav {
+            ul {
+                gap: 47px;
+                li {
+                    flex-shrink: 0;
+                    // flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 999px) {
+    .footer {
+        height: 282px;
+        &_container {
+            padding-top: 2.1%;
+            grid-template-columns: 32.5% 25.5% 43.4%;
+            grid-template-rows: 29% 28% 31%;
+        }
+        &__logo {
+            margin-left: 0.4%;
+        }
+        &__subscribe {
+            display: none;
+        }
+        form {
+            .btn {
+                margin-left: 0%;
+            }
+            grid-row: 2/3;
+        }
+        &__social {
+            grid-column: 3/4;
+            grid-row: 1/2;
+            margin-top: -2px;
+            justify-self: end;
+            &_name {
+                display: none;
+            }
+            ul {
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        nav {
+            ul {
+                gap: 19%;
+            }
+        }
+        .footer_design {
+            grid-column: 3/4;
+            margin-right: 3%;
+        }
+    }
+}
+
+@media(max-width: 639px) {
+    .footer {
+        height: 334px;
+        &_container {
+            padding-top: 7.5%;
+            grid-template-columns: 100%;
+            grid-template-rows: 23px 22px 59px 44px 25px;
+            gap: 30px;
+            justify-items: center;
+            align-items: center;
+        }
+        &__logo {
+            width: 128px;
+            height: 23px;
+            border: none;
+            // margin: 0 auto;
+            img {
+                left: 56%;
+                bottom: 6px;
+            }
+        }
+        form {
+            grid-row: 3/4;
+            margin-right: 2%;
+        }
+        &__social {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            justify-self: center;
+            margin: 0;
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                li {
+                    margin-bottom: 0;
+                }
+            }
+            &_icon {
+                margin: 0;
+            }
+        }
+        nav {
+            grid-row: 5/6;
+            justify-self: start;
+            margin-left: 3.4%;
+            ul {
+                gap: 16%;
+            }
+        }
+        .footer_design {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            align-items: end;
+            font-size: 15px;
+            margin: 0;
+            padding: 0 0 0 2px;
+            width: 218px;
+        }
+    }
+}
